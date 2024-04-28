@@ -1,13 +1,35 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const navItems = ref([
+  {
+    link: "/",
+    name: "Home",
+  },
+  {
+    link: "/recipes",
+    name: "Meal Mouse",
+  },
+  {
+    link: "/organizer",
+    name: "Mouse around the house",
+  },
+]);
+const mainTitle = ref("House Mouse");
+</script>
 
 <template>
-  <h1>House Mouse v1</h1>
-  <nav class="text-center">
-    <RouterLink class="p-2" to="/">Home</RouterLink>
-    <RouterLink class="p-2" to="/recipes">Meal Mouse</RouterLink>
-    <RouterLink class="p-2" to="/organizer">Mouse around the house</RouterLink>
+  <h1>{{ mainTitle }}</h1>
+  <nav class="border-b">
+    <RouterLink
+      v-for="(item, index) in navItems"
+      :key="index"
+      class="p-2"
+      :to="item.link"
+      >{{ item.name }}</RouterLink
+    >
   </nav>
   <main>
-    <RouterView class="text-center mt-10" />
+    <RouterView class="mt-10" />
   </main>
 </template>
