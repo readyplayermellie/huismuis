@@ -18,7 +18,7 @@
       </option>
     </select>
     <div class="m-8 flex flex-wrap justify-center">
-      <div v-if="meals.length > 0" v-for="(meal, index) in meals" :key="index">
+      <div v-if="meals?.length > 0" v-for="(meal, index) in meals" :key="index">
         <RandomRecipe :recipe="meal" />
       </div>
     </div>
@@ -26,13 +26,13 @@
 </template>
 
 <script setup>
-import RandomRecipe from "@/components/RandomRecipe.vue";
+import RandomRecipe from "@/components/RandomRecipe/RandomRecipe.vue";
 
 import { useRecipeStore } from "@/stores/useRecipeStore";
 import { ref, onMounted } from "vue";
 
 const store = useRecipeStore();
-let categories = ref("");
+let categories = ref([]);
 let meals = ref([]);
 let chosenCategory = ref("");
 

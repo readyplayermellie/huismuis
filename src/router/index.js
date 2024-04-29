@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import OrganizeMouse from "@/views/OrganizeMouse.vue";
-import MealMouse from "@/views/MealMouse.vue";
+import OrganiseView from "@/views/OrganiseView.vue";
+import MealView from "@/views/MealView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,12 +14,12 @@ const router = createRouter({
     {
       path: "/recipes",
       name: "mealmouse",
-      component: MealMouse,
+      component: MealView,
     },
     {
-      path: "/organizer",
+      path: "/organiser",
       name: "organizemouse",
-      component: OrganizeMouse,
+      component: OrganiseView,
     },
   ],
 });

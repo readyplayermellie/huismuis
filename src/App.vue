@@ -14,7 +14,7 @@
 // [X] Add a few standards tasks to the calendar
 // [ ] Add 2 unit test suites
 // [X] eslint check
-// [ ] deploy on Github pages
+// [X] deploy on Github pages
 
 import { ref } from "vue";
 
@@ -28,8 +28,8 @@ const navItems = ref([
     name: "Meals",
   },
   {
-    link: "/organizer",
-    name: "Organizer",
+    link: "/organiser",
+    name: "Organiser",
   },
 ]);
 const mainTitle = ref("House Mouse");
