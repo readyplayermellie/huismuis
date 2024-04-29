@@ -5,10 +5,6 @@ import {
   filterMealsByCategory,
 } from "@/services/recipeServices";
 
-// To do:
-// [ ] Do I need getters and constants?
-// [ ] Can I make it smaller?
-
 export const useRecipeStore = defineStore("recipes", () => {
   async function getRandomRecipeAction() {
     let randomRecipe = [];

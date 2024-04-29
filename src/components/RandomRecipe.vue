@@ -1,11 +1,7 @@
 <template>
-    <div class="flex justify-center">
-        <div class="text-center max-w-96">
-            <h3>
-            <b>{{ recipe }}</b>
-            </h3>
-        </div>
-    </div>
+  <div class="w-72 p-3 m-3 rounded-md recipe-card">
+    <h3 class="text-sm">{{ props.recipe }}</h3>
+  </div>
 </template>
 
 <script setup>
