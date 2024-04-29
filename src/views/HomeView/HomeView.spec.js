@@ -1,10 +1,11 @@
-import HomeView from "./HomeView.vue"
-import { mount } from "@vue/test-utils"
+import HomeView from "./HomeView.vue";
+import { mount } from "@vue/test-utils";
+import { describe, expect, it } from "vitest";
 
 describe("HomeView", () => {
-    it("renders properly", () => {
-        const wrapper = mount(HomeView)
+  it("renders properly", () => {
+    const wrapper = mount(HomeView);
 
-        expect(wrapper.exists()).toBe(true);
-    })
+    expect(wrapper.exists()).toBe(true);
+  });
 });
