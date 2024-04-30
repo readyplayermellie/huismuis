@@ -1,6 +1,6 @@
 {
   "name": "huismuis",
-  "version": "0.0.0",
+  "version": "1.2.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "tailwind": "npx tailwindcss -i ./src/assets/main.css -o ./src/output.css --watch",
+    "tailwind": "npx tailwindcss -i ./src/assets/main.css -o ./src/assets/output.css --watch",
     "test": "vitest"
   },
   "dependencies": {

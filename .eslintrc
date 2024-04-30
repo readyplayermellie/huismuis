@@ -14,6 +14,7 @@
     "plugins": [
         "vue"
     ],
+    "ignorePatterns": ["dist"],
     "rules": {
         "vue/multi-word-component-names": "off",
         "vue/object-curly-spacing": [2, "always"],
@@ -22,12 +23,12 @@
         }],
         "vue/max-attributes-per-line": [2, {
         "singleline": {
-            "max": 1
+            "max": 4
         },
         "multiline": {
             "max": 1
         }
         }],
-        "semi": [2, "never"]
+        "semi": [2, "always"]
     }
 }

@@ -17,10 +17,8 @@
         {{ item }}
       </option>
     </select>
-    <div class="m-8 flex flex-wrap justify-center">
-      <div v-if="meals?.length > 0" v-for="(meal, index) in meals" :key="index">
-        <RandomRecipe :recipe="meal" />
-      </div>
+    <div v-if="meals?.length > 0" class="m-8 flex flex-wrap justify-center">
+      <RandomRecipe :recipe="meal" v-for="(meal, index) in meals" :key="index" />
     </div>
   </div>
 </template>
